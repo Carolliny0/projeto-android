@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Splash& display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
 
 @font-face {
     font-family: Android;
@@ -15,16 +18,32 @@
 }
 
 :root{
-    --cor0: #bee2be;
+
+    --cor0:#B4BEC9;
+    --cor1: #e8f3f3;
+    /*--cor1: #159A9C;*/
+    --cor2: #002333;
+    --cor3:#bfdbce;
+    --cor4: #12968f; 
+
+    /*#DEEFE7;
+    --cor0: #36BFB1;
+    --cor1:#038C73;
+    --cor2:#02735E;
+    --cor3: #014034;
+    --cor4: #0D0D0D;
+
+    /*--cor0: #bee2be;
     --cor1: #00d882;
     --cor2: #4DA381;
     --cor3: #032c1c;
-    --cor4: #295744;
+    --cor4: #295744;*/
 
     --font-padrao: Arial, Helvetica, sans-serif;
     --font-destaque: 'Bebas Neue', cursive; /*'Splash', cursive; 'Bebas Neue', cursive; */
     /* Não estada dando certo pois havia espaçamento nos links. */
     --font-android: 'Android', cursive;
+    --fonte-1: 'Oswald', sans-serif;
 }
 
 body{
@@ -41,21 +60,24 @@ main p{
 header{
     background-image: linear-gradient(to bottom, var(--cor2), var(--cor3));
     font-family: var(--font-destaque);
-    font-size: 20px;
+    font-size: 25px;
     color: var(--cor1);
     min-height: 150px;
     text-align: center;
     padding-top: 50px;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.63);
+    text-shadow: 1px 1px px rgba(0, 0, 0, 0.411);
 }
 header >h1{
     margin-bottom: 20px;
     color: white;
 }
+header > p{
+    color: #244450;
+}
 nav{
-    background-color: var(--cor3);
+    background-color: var(--cor2);
     padding: 10px;
-    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.555);
+    box-shadow: -1px 2px 15px rgba(0, 0, 0, 0.493);
 }
 nav > a{
     color: white;
@@ -64,9 +86,10 @@ nav > a{
     font-weight: bold;
     border-radius: 5px;
     transition-duration: .5s;
+    margin: auto;
 }
 nav >:hover{
-    background-color: var(--cor1);
+    background-color: var(--cor4);
 }
 main{
     min-width: 300px;
@@ -79,10 +102,16 @@ main{
     border-radius: 0px 0px 10px 10px;
 }
 main h1{
-    font-family: var(--font-android);
+    font-family: var(--fonte-1);
+    text-transform: uppercase;
+    font-size: 25px;
+    padding-left: 10px;
 }
 main h2{
-    font-family: var(--font-android);
+    font-family: var(--fonte-1);
+    text-transform: uppercase;
+    font-size: 25px;
+    padding-left: 10px;
 }
 main img{
     width: 100%;
@@ -97,9 +126,9 @@ main strong{
     font-weight: bold;
 }
 main a{
-    background-color: #bee2be;
+    /*background-color: #bee2be;*/
     text-decoration: none;
-    color: #032c1c;
+    color: var(--cor2);
     font-weight: bolder;
 }
 main a:hover{
@@ -117,24 +146,25 @@ aside > ul{
     box-shadow: 3px 3px 8px black ;
 }
 aside > h3{
-    background-color: var(--cor3);
+    background-color: var(--cor2);
     color: white;
     padding: 10px;
     margin: -10px -10px 0px -10px;
     border-radius: 10px 10px 0px 0px;
 }
 footer{
-    background-color: #032c1c;
+    background-color: var(--cor2);
     color: white;
     text-align: center;
-    font-size: 0.8px;
-    padding: 5px;
+    font-size: 15px;
+    padding: 10px;
 }
 h2{
-    background-image: linear-gradient(to right, var(--cor1), transparent);
+    /*background-image: linear-gradient(to right, var(--cor1), transparent);*/
+    background-image: linear-gradient(to right, var(--cor3), transparent);
 }
 div.video{
-    background-color: var(--cor4);
+    background-color: var(--cor3);
     margin: 0px -20px 30px -20px;
     padding: 20px;
     padding-bottom: 59%;
@@ -146,4 +176,7 @@ div.video > iframe{
     left: 5%;
     width: 90%;
     height: 90%;
+}
+footer a{
+    color: white;
 }
